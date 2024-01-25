@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Sujeito Programador - Meu portfolio</title>
+
+  <style>
+        *{
+        margin:0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+        }
+
+        body{
+        font-family: 'Roboto', sans-serif;
+        }
+
+        /* INICIO HEADER */
+        .nav{
+        background-color: #181818;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        }
+
+        .nav-list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-right: 28px;
+        }
+
+        .nav-list a{
+        text-decoration: none;
+        color: #DDD;
+        padding: 20px;
+        }
+
+        .nav-list a:hover{
+        color: #FFFFFF;
+        }
+        /* FIM HEADER */
+
+
+        /* INICIO MAIN */
+        .main{
+        width: 100%;
+        background-color: #000;
+        height: calc(100vh - 80px);
+        background-image: url("imagens/programador.png");
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        }
+
+        .main h1{
+        color: #FFFFFF;
+        font-size: 54px;
+        }
+
+        .main p {
+        font-size: 24px;
+        font-style: italic;
+        color: #1e96FC;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        }
+
+        .call-to-action{
+        cursor: pointer;
+        background-color: #FFFFFF;
+        border:0;
+        padding: 14px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.9s;
+        }
+
+        .call-to-action:hover{
+        transform: scale(1.1);
+        }
+
+        .main a{
+        text-decoration: none;
+        color: #181818;
+        }
+        /* FIM MAIN */
+
+        /* INICIO ABOUT */
+        .about{
+        background-color: #FFFFFF;
+        width: 100%; 
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        .about div{
+        max-width: 50%;
+        padding-right: 40px;
+        }
+
+        .about img{
+        max-width: 450px;
+        border-radius: 8px;
+        }
+
+        .about div h2{
+        font-size: 32px;
+        margin-bottom: 14px;
+        }
+        /* FIM ABOUT */
+
+
+
+        /* INICIO projetos */
+        .projetos{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 90px 0;
+        }
+
+        .projetos h2{
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        .projetos p{
+            margin-bottom: 10px;
+    
+        }
+
+        .projeto_lista{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .projeto_lista img{
+            width: 22%;
+            margin-left: 5px;
+            margin-right: 5px;
+            opacity: 0.8;
+        }
+        .projeto_lista img:hover{
+            opacity: 1.0;
+            transition: 0.6s;
+        }
+        .orcamento{
+            background-color: #181818;
+            border: 0;
+            margin-top: 30px;
+            padding: 12px 24px;
+            color: white;
+            font-weight:bold;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        /* FINAL PROJETOS */
+
+
+
+
+        /* Inicio RODAPE */
+        .footer{
+            background-color: #181818;
+            width: 100%;
+            padding: 70px 0 ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer a{
+            margin-right: 12px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer p{
+            color: white;
+        }
+
+
+        /* Final RODAPE */
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        /* Media Queries */
+        @media (max-width: 1050px){
+            /*inicio MAIN */
+            .main h1{
+                font-size: 40px;
+            }
+            .main p{
+                font-size: 20px;
+            }
+
+            .main{
+                background-size: cover;
+            }
+            /*FINAL MAIN */
+
+
+            /* INICIO SOBRE */
+            .about{
+                display: flex;
+                flex-direction: column;
+                padding-top: 40px;
+                padding-right: 0;
+                padding-left: 0;
+                padding-bottom: 0;
+            }
+
+            .about div{
+                max-width: 80%;
+            }
+
+            .about div h2{
+                font-size: 2.2em;
+
+            }
+
+            .about img{
+                width: 85%;
+            }
+            /* FINAL SOBRE */
+
+
+            /* INICIO PROJETOS */
+            .projetos img{
+                width: 27%;
+            }
+            /* FIM PROJETOS */
+
+
+            /* INICIO RODAPE */
+            .footer{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer h3{
+                margin-bottom: 12px;
+            }
+
+
+           
+
+
+
+
+
+
+        }
+
+
+
+  </style>
+</head>
+<body>
+  
+  <!-- INICIO HEADER -->
+  <nav class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#sobre">Sobre</a>
+      </li>
+      <li>
+        <a href="#projetos">Projetos</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- FIM HEADER -->
+
+  <!-- INICIO MAIN -->
+  <section id="home" class="main">
+    <div>
+      <h1>Olá,<br>Seja bem vindo</h1>
+      <p>Crie soluções para seu negócio!</p>
+      <a href="#projetos">
+        <button class="call-to-action">
+          Veja meus projetos 👇
+        </button>
+      </a>
+    </div>
+  </section>
+  <!-- FIM MAIN -->
+
+  <!-- INICIO SOBRE -->
+  <section id="sobre" class="about">
+    <div>
+      <h2>Sobre</h2>
+      <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure corrupti vel quod enim cupiditate quam inventore. Sequi esse alias facere ipsum consequatur accusantium asperiores, labore est soluta.
+      <br> <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio earum architecto corrupti aliquid, eius impedit obcaecati, nulla maiores laboriosam reiciendis in voluptate tenetur mollitia accusantium optio unde, quia numquam.</p>
+    </div>
+    <img src="imagens/foto-pc.png" alt="Foto minha programando">
+  </section>
+  <!-- FIM SOBRE -->
+
+  <!--Inicio dos Projetos-->
+
+  <section id="projetos" class="projetos">
+    <h2>Meus Proejetos</h2>
+    <p>Conheça meus projetos</p>
+
+    <div class="projeto_lista">
+        <img src="imagens/projeto1.png" alt="">
+        <img src="imagens/projeto2.png" alt="">
+        <img src="imagens/projeto3.png" alt="">
+    </div>
+
+    
+    <div class="projeto_lista">
+        <img src="imagens/projeto3.png" alt="">
+        <img src="imagens/projeto2.png" alt="">
+        <img src="imagens/projeto1.png" alt="">
+    </div>
+
+    <button class="orcamento">Faça um orçamento</button>
+  </section>
+
+
+
+  <section class="footer">
+    <h3>
+        <a href="#">Arthur Rodrigues Davidonis</a>
+    </h3>
+    <p>Todos os direitos reservados!</p>
+
+  </section>
+
+</body>
+</html>
